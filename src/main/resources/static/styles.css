@@ -1,0 +1,165 @@
+body {
+    background: linear-gradient(135deg, #181c24 0%, #23293a 100%);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+.app-header {
+    font-size: 2.7rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    position: relative;
+    animation: glowHeader 2s infinite alternate;
+}
+
+@keyframes glowHeader {
+    0% { text-shadow: 0 0 8px #4169e1, 0 0 24px #27408b;}
+    100% { text-shadow: 0 0 20px #4169e1, 0 0 40px #27408b;}
+}
+
+.gradient-text {
+    background: linear-gradient(90deg,#4169e1 30%,#00c6ff 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.glass-card {
+    background: rgba(35, 41, 58, 0.7);
+    border-radius: 18px;
+    box-shadow: 0 8px 32px 0 rgba(65,105,225,0.18);
+    backdrop-filter: blur(10px);
+    border: 1.5px solid rgba(65,105,225,0.12);
+    transition: box-shadow 0.3s;
+}
+
+.glass-card:hover {
+    box-shadow: 0 16px 40px 0 rgba(65,105,225,0.26);
+}
+
+.glass-input {
+    background: rgba(24,28,36,0.7);
+    color: #e3e7ee;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(65,105,225,0.15);
+    transition: box-shadow 0.2s, border 0.2s;
+}
+
+.glass-input:focus {
+    border: 1.5px solid #4169e1;
+    box-shadow: 0 0 0 0.15rem #4169e1a0;
+}
+
+.neon-btn {
+    background: linear-gradient(90deg, #4169e1 60%, #00c6ff 100%);
+    color: #fff;
+    border: none;
+    border-radius: 9px;
+    box-shadow: 0 0 24px #4169e144;
+    position: relative;
+    transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+
+.neon-btn:hover, .neon-btn:focus {
+    background: linear-gradient(90deg, #27408b 60%, #4169e1 100%);
+    box-shadow: 0 0 36px #00c6ff66;
+    transform: translateY(-2px) scale(1.03);
+}
+
+#notesContainer .col-md-6 {
+    display: flex;
+}
+
+.note-card {
+    background: rgba(35, 41, 58, 0.93);
+    border-radius: 18px;
+    box-shadow: 0 4px 24px 0 rgba(65,105,225,0.10);
+    backdrop-filter: blur(4px);
+    border: 1.5px solid rgba(65,105,225,0.16);
+    color: #e3e7ee;
+    transition: box-shadow 0.3s, transform 0.2s;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    animation: cardIn 0.7s;
+}
+
+@keyframes cardIn {
+    0% { opacity: 0; transform: scale(0.8) translateY(30px);}
+    100% { opacity: 1; transform: scale(1) translateY(0);}
+}
+
+.note-card .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #4169e1;
+    margin-bottom: 0.4rem;
+    letter-spacing: 0.5px;
+}
+
+.note-card .card-text {
+    color: #e3e7ee;
+    font-size: 1.04rem;
+    min-height: 54px;
+}
+
+.card-actions {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-end;
+    margin-top: 1.2rem;
+}
+
+.btn-sm {
+    padding: 0.38rem 1.05rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 8px;
+    border: none;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.btn-edit {
+    background: linear-gradient(90deg, #4169e1 60%, #00c6ff 100%);
+    color: #fff !important;
+    box-shadow: 0 0 10px #4169e144;
+}
+
+.btn-edit:hover, .btn-edit:focus {
+    background: linear-gradient(90deg, #27408b 60%, #4169e1 100%);
+    color: #fff !important;
+    box-shadow: 0 0 15px #00c6ff77;
+}
+
+.btn-delete {
+    background: transparent;
+    color: #ff4c4c !important;
+    border: 1.5px solid #ff4c4c;
+    box-shadow: none;
+}
+
+.btn-delete:hover, .btn-delete:focus {
+    background: #ff4c4c22;
+    color: #fff !important;
+    box-shadow: 0 0 10px #ff4c4c88;
+}
+
+@media (max-width: 768px) {
+    .app-header {
+        font-size: 2rem;
+    }
+    .note-card, .glass-card {
+        border-radius: 14px;
+        padding: 1.2rem;
+    }
+    #notesContainer .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+::-webkit-input-placeholder { color: #adb5bd; }
+::-moz-placeholder { color: #adb5bd; }
+:-ms-input-placeholder { color: #adb5bd; }
+::placeholder { color: #adb5bd; }
