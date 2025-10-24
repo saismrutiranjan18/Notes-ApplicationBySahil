@@ -9,7 +9,6 @@ A simple and stylish **Notes Application** built using **Spring Boot**, **MongoD
 - All notes are stored in **MongoDB**.
 - Responsive design that looks good on desktop and mobile.
 - Stylish gradient text and dark theme for a modern look.
-- Footer with **Made with ❤️ by Sahil Malaiya** and copyright info.
 
 ---
 
@@ -25,14 +24,14 @@ A simple and stylish **Notes Application** built using **Spring Boot**, **MongoD
 
 ## Installation & Setup
 
-1. **Clone the repository*
+1. **Clone the repository**
 
 ```bash
 git clone https://github.com/your-username/notes-app.git
 cd notes-app
 
 
-2.  **Setup MongoDB**
+2. Setup MongoDB
 
 Create a cluster on MongoDB Atlas (or use local MongoDB).
 
@@ -41,14 +40,14 @@ Get the connection string and update application.properties:
 spring.data.mongodb.uri=mongodb+srv://<username>:<password>@cluster0.mongodb.net/notesdb?retryWrites=true&w=majority
 
 
-3.  **Run the Spring Boot App**
+3. Run the Spring Boot App
 
 mvn spring-boot:run
 
 
 The backend will start at http://localhost:8080.
 
-4.  **Open Frontend**
+4. Open Frontend
 
 Open index.html in a browser (or serve it using any static server).
 
