@@ -32,7 +32,7 @@ git clone https://github.com/your-username/notes-app.git
 cd notes-app
 
 
-Setup MongoDB
+2.  **Setup MongoDB**
 
 Create a cluster on MongoDB Atlas (or use local MongoDB).
 
@@ -41,14 +41,14 @@ Get the connection string and update application.properties:
 spring.data.mongodb.uri=mongodb+srv://<username>:<password>@cluster0.mongodb.net/notesdb?retryWrites=true&w=majority
 
 
-Run the Spring Boot App
+3.  **Run the Spring Boot App**
 
 mvn spring-boot:run
 
 
 The backend will start at http://localhost:8080.
 
-Open Frontend
+4.  **Open Frontend**
 
 Open index.html in a browser (or serve it using any static server).
 
@@ -56,7 +56,7 @@ Make sure the API URL in app.js points to your backend:
 
 const API_URL = "http://localhost:8080/api/notes";
 
-Usage
+#Usage
 
 Add a note using the form at the top.
 
@@ -68,12 +68,12 @@ Everything is synced with MongoDB in real-time.
 
 Screenshots
 
-(optional, if you have one)
+![WhatsApp Image 2025-10-24 at 14 55 45_aae0f62f](https://github.com/user-attachments/assets/81f1ca4f-fe7d-475e-804f-574a4174c813)
 
-Contributing
+
+#Contributing
 
 Contributions are welcome! If you want to improve the app or fix bugs, feel free to open a pull request.
 
-Author
-
+Author-
 Sahil Malaiya
