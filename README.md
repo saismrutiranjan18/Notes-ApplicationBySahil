@@ -25,7 +25,7 @@ A simple and stylish **Notes Application** built using **Spring Boot**, **MongoD
 
 ## Installation & Setup
 
-1. **Clone the repository**
+1. **Clone the repository*
 
 ```bash
 git clone https://github.com/your-username/notes-app.git
@@ -66,14 +66,8 @@ Edit or delete notes using the respective buttons.
 
 Everything is synced with MongoDB in real-time.
 
-Screenshots
-
-![WhatsApp Image 2025-10-24 at 14 55 45_aae0f62f](https://github.com/user-attachments/assets/81f1ca4f-fe7d-475e-804f-574a4174c813)
 
 
 #Contributing
-
 Contributions are welcome! If you want to improve the app or fix bugs, feel free to open a pull request.
 
-Author-
-Sahil Malaiya
